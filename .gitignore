@@ -3,8 +3,12 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+test-results/**
+runtime-data/**
 # C extensions
 *.so
+
+**/.DS_Store**
 
 # Distribution / packaging
 .Python
@@ -172,3 +176,4 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+node_modules
