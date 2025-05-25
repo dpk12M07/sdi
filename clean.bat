@@ -1,9 +1,10 @@
 @echo off
 echo Cleaning static files, cache, and build outputs...
 
-REM Delete Next.js build output
+REM Delete Next.js build output and cache
 if exist .next (
-    echo Removing .next directory...
+    echo Removing .next directory and cache...
+    if exist .next\cache rmdir /s /q .next\cache
     rmdir /s /q .next
 )
 

@@ -2,9 +2,10 @@
 
 echo "Cleaning static files, cache, and build outputs..."
 
-# Delete Next.js build output
+# Delete Next.js build output and cache
 if [ -d ".next" ]; then
-    echo "Removing .next directory..."
+    echo "Removing .next directory and cache..."
+    rm -rf .next/cache
     rm -rf .next
 fi
 
